@@ -1,7 +1,7 @@
 class Order:
-    def __init__(self, items, total_price):
+    def __init__(self, items, total_amount):
         self.items = items
-        self.total_price = total_price
+        self.total_price = total_amount
 
     def get_price(self):
         result = 0
