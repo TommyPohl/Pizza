@@ -1,3 +1,3 @@
 class Topping:
-    def __init__(self, ingredients):
-        self.ingredients = ingredients
+    def __init__(self, topping):
+        self.topping = topping
