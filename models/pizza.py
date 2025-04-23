@@ -1,6 +1,6 @@
 class Pizza:
-    def __init__(self, name, price, size, ingredients):
+    def __init__(self, name, price, size, topping):
         self.name = name
         self.price = price
         self.size = size
-        self.ingredients = ingredients
+        self.topping = topping
