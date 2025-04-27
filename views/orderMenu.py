@@ -68,3 +68,4 @@ def choose_topping():
     else:
         print("Neplatná volba.")
         return choose_topping()
+
