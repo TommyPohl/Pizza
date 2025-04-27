@@ -38,11 +38,11 @@ def choose_pizza():
     choice = input("Zadejte volbu: ")
 
     if choice == "1":
-        return Pizza("Margherita", 120)
+        return Pizza("Margherita", 120, "M", "Top1")
     elif choice == "2":
-        return Pizza("Salami", 135)
+        return Pizza("Salami", 135, "M", "Top2")
     elif choice == "3":
-        return Pizza("Quattro Formaggi", 150)
+        return Pizza("Quattro Formaggi", 150, "L", "Top3")
     else:
         print("Neplatná volba, výběr opakuji.")
         return choose_pizza()

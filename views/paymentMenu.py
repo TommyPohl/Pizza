@@ -29,9 +29,9 @@ def show_payment_menu(amount):
     try:
         success = payment.process_payment()
         if success:
-            print("✅ Platba proběhla úspěšně.")
+            print("Platba proběhla úspěšně.")
             return payment
     except ValueError as e:
-        print(f"❌ Chyba při platbě: {e}")
+        print(f"Chyba při platbě: {e}")
 
     return None

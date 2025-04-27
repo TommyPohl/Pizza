@@ -1,8 +1,7 @@
-def print_main_menu():
-    print("""
-    ------------MAIN-MENU---------------
-    [1] - Objednat pizzu
-    [2] - Zobrazit košík
-    [3] - Zaplatit
-    [0] - Konec
-    """)
+class MainMenu:
+    def display(self):
+        print("=== MAIN MENU ===")
+        print("1. Objednat pizzu")
+        print("2. Zobrazit objednávky")
+        print("3. Konec")
+        choice = input("Zvolte možnost: ")

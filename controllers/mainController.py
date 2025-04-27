@@ -1,16 +1,26 @@
 from views.paymentMenu import show_payment_menu
 from views.orderMenu import show_order_menu
+from views.mainMenu import MainMenu
 
-def finalize_order(total_amount):
-    payment = show_payment_menu(total_amount)
-    if payment and payment.is_paid():
-        print("Objednávka byla úspěšně dokončena.")
-    else:
-        print("Platba se nezdařila nebo byla zrušena.")
+class mainController:
+    def __init__(self):
+        self.menu = MainMenu()
 
+    def run(self):
+        self.menu.display()
 
-def main_flow():
-    pizza = show_order_menu()
-    if pizza:
-        total = pizza.get_total_price()
-        show_payment_menu(total)
+class mainController:
+    def __init__(self):
+        self.main_menu = MainMenu()
+        self.order_menu = show_order_menu()
+
+    def run(self):
+        while True:
+            choice = self.main_menu.display()
+            if choice == "1":
+                self.order_menu.display()
+            elif choice == "3":
+                print("Děkujeme za použití systému. Nashledanou!")
+                break
+            else:
+                print("Neplatná volba.")
